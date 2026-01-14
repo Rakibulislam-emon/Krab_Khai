@@ -112,6 +112,32 @@ _A registry of things we've learned and implemented._
 
 - "Scroll-jacking" feels broken on touchscreens. Native scroll is better for mobile.
 
+### [Date: Today] - Phase 6: The Magician Refactor
+
+**What Changed:**
+
+- **Aesthetic:** Shifted to "Midnight Gold" theme (`#050A10` + `#D4AF37`).
+- **Assets:** Generated bespoke premium AI imagery for Hero, Texture, and Dishes.
+- **Structure:** Consolidated `Intro`, `History`, `Values`, and `Contact` into a single immersive `page.tsx`.
+- **Experience:** Improved ScrollReveal and added "Signature Dish" showcase.
+
+**Why:**
+
+- To achieve a "rich, premium, out-of-the-box" feel as requested. Reduced clicking, increased immersion.
+
+### [Date: Today] - Phase 7: Award-Winning Visuals
+
+**What Changed:**
+
+- **Visuals:** Integrated 6 cinematic assets (Fire intro, Historical visuals, Chef hands, Luxury interiors).
+- **Components:** Upgraded `HorizontalScroll` and `PinnedFeature` to support visual narratives.
+- **Polish:** Refined typography and spacing for an "expensive" feel.
+- **Locations:** Converted text blocks to immersive visual cards.
+
+**Why:**
+
+- To elevate the site from "Premium" to "Award-Winning", focusing on emotional storytelling through imagery.
+
 ### [Date: Today] - Phase 4: Advanced GSAP
 
 **What Changed:**
