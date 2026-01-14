@@ -33,6 +33,26 @@ This file tracks our journey, the changes we make, the concepts we master, and h
 - **Project Scope:** Monolithic Next.js 16 app with focus on frontend polish.
 - **Documentation Strategy:** Keeping technical docs separate from learning guides.
 
+### [Date: Today] - Phase 1: Foundation Setup
+
+**What Changed:**
+
+- Installed `gsap`, `framer`, `lenis`, `lucide-react`.
+- Configured **Tailwind v4** with brand colors (`ocean-blue`, `sunset-coral`).
+- Created base components (`Header`, `Footer`, `Button`, `Container`).
+- Updated `page.tsx` to verify the layout.
+- Created `lib/utils.ts` for clean class merging.
+
+**Why:**
+
+- We need a solid base before jumping into complex animations.
+- Reusable components like `Container` ensure consistent spacing.
+
+**Concepts Cleared:**
+
+- **Tailwind v4 Configuration:** It uses CSS variables in `@theme` block inside CSS instead of `tailwind.config.ts`.
+- **Component Composition:** Creating a `layout` folder for structural parts vs `ui` for dumb primitives.
+
 ---
 
 ## 🧠 Concepts Cleared

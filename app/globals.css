@@ -1,21 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --ocean-blue: #1a3a5c;
+  --marine-teal: #2d6a7c;
+  --sunset-coral: #ff7f50;
+  --golden-spice: #d4a574;
+
+  /* Neutrals */
+  --charcoal-slate: #1f2937;
+  --warm-sand: #f5f0e8;
+  --soft-pearl: #fefefe;
+
+  /* System mappings */
+  --background: var(--soft-pearl);
+  --foreground: var(--charcoal-slate);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-ocean-blue: var(--ocean-blue);
+  --color-marine-teal: var(--marine-teal);
+  --color-sunset-coral: var(--sunset-coral);
+  --color-golden-spice: var(--golden-spice);
+
+  --color-charcoal-slate: var(--charcoal-slate);
+  --color-warm-sand: var(--warm-sand);
+  --color-soft-pearl: var(--soft-pearl);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark mode adjustments - sticking to brand deep blue for dark mode background? 
+       For now, let's keep a dark ocean vibe */
+    --background: #0f2336; /* Darker version of ocean blue */
+    --foreground: var(--soft-pearl);
   }
 }
 
@@ -23,4 +47,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
 }
