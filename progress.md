@@ -100,6 +100,31 @@ _A registry of things we've learned and implemented._
 - **GSAP:** Complex, timeline-based animations (The main "Story").
 - **Framer Motion:** Simple UI interactions (Hover, Click).
 
+### [Date: Today] - Phase 4: Advanced GSAP
+
+**What Changed:**
+
+- Created `HorizontalScroll` and `PinnedFeature` components.
+- Implemented `GSAP MatchMedia` to ensure these effects only run on desktop.
+- On mobile, they gracefully degrade to vertical scrolling stacks.
+
+**Why:**
+
+- "Scroll-jacking" feels broken on touchscreens. Native scroll is better for mobile.
+
+### [Date: Today] - Phase 4: Advanced GSAP
+
+**What Changed:**
+
+- Created `HorizontalScroll` component (Timeline) using `ScrollTrigger` pinning.
+- Created `PinnedFeature` component (Values) for split-screen scroll effects.
+- Updated `/about` page to use these immersive layouts.
+
+**Why:**
+
+- Vertical scrolling is boring. Horizontal movements surprise the user.
+- Pinning content keeps important context visible while details scroll.
+
 ---
 
 ## 🛠️ Revert Plan / Troubleshooting
