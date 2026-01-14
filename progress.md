@@ -73,6 +73,20 @@ This file tracks our journey, the changes we make, the concepts we master, and h
 - **Separation of Concerns:** Data vs. UI.
 - **TypeScript Interfaces:** Defining contracts for our content.
 
+### [Date: Today] - Phase 3: Hero & Animations
+
+**What Changed:**
+
+- Created reusable animation components: `ScrollReveal`, `TextReveal`, `ParallaxImage`.
+- Built the **Hero Section** with a parallax background and character-staggered headline.
+- Implemented **Glassmorphism Header** that blurs on scroll.
+- Integrated `framer-motion` and `gsap` for layout animations.
+
+**Why:**
+
+- Animations guide the user's eye and create a premium feel.
+- Reusable components ensure consistency across the site.
+
 ---
 
 ## 🧠 Concepts Cleared

@@ -63,3 +63,33 @@ _Why?_ Creates depth (3D feeling) on a 2D screen.
 
 Animating a list of items (like menu cards) one after another with a small delay.
 _Why?_ clearer to process than everything flashing on screen at once.
+
+## Implementation Guide (Phase 3)
+
+We have created reusable components in `components/animations/` to make these effects easy to use:
+
+### 1. ScrollReveal
+
+Wraps any content to animate it when it enters the viewport.
+
+```tsx
+<ScrollReveal variant="slide-up" delay={0.2}>
+  <h2>I fade in up!</h2>
+</ScrollReveal>
+```
+
+### 2. TextReveal
+
+Animates text character-by-character for impressive headlines.
+
+```tsx
+<TextReveal text="Epic Headline" />
+```
+
+### 3. ParallaxImage
+
+Uses GSAP to create a depth effect on scroll. Great for hero backgrounds.
+
+```tsx
+<ParallaxImage src="/img.jpg" speed={0.2} />
+```
