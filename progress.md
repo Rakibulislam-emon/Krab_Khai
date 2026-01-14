@@ -51,7 +51,27 @@ This file tracks our journey, the changes we make, the concepts we master, and h
 **Concepts Cleared:**
 
 - **Tailwind v4 Configuration:** It uses CSS variables in `@theme` block inside CSS instead of `tailwind.config.ts`.
+- **Tailwind v4 Configuration:** It uses CSS variables in `@theme` block inside CSS instead of `tailwind.config.ts`.
 - **Component Composition:** Creating a `layout` folder for structural parts vs `ui` for dumb primitives.
+
+### [Date: Today] - Phase 2: Content & Data
+
+**What Changed:**
+
+- Created `lib/types.ts` with interfaces (`MenuItem`, `BrandStory`, `Location`).
+- Created "database" files: `lib/data/menu.ts`, `brand.ts`, `locations.ts`.
+- Built Static Pages: `/menu`, `/about`, `/contact`.
+
+**Why:**
+
+- Hardcoding text in `page.tsx` is bad practice.
+- We need a "Single Source of Truth" for data so edits are easy.
+- TypeScript ensures we don't accidentally ship a menu item without a price.
+
+**Concepts Cleared:**
+
+- **Separation of Concerns:** Data vs. UI.
+- **TypeScript Interfaces:** Defining contracts for our content.
 
 ---
 

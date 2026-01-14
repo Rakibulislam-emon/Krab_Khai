@@ -60,3 +60,33 @@ _This section will be updated as we hit errors._
 
 - **"Type 'string' is not assignable to type 'number'":** You are trying to put text into a number variable.
 - **"Property 'x' does not exist on type 'y'":** You are trying to access a field that TypeScript doesn't know about. Check your Interface definition.
+
+## Data Patterns (Phase 2)
+
+### Defining Content Models
+
+We split "Content" from "Code" using interfaces.
+
+1. **Define the Shape:** `lib/types.ts`
+2. **Create the Data:** `lib/data/menu.ts`
+3. **Use in Component:** `app/menu/page.tsx`
+
+```typescript
+// 1. The Contract
+interface MenuItem {
+  name: string;
+  price: number;
+}
+
+// 2. The Data (must match contract)
+const item: MenuItem = {
+  name: "Crab",
+  price: 50, // Error if missing!
+};
+```
+
+### Tips
+
+- Use `export type` for small unions like `type SpiceLevel = 0 | 1 | 2;`.
+- Use `export interface` for objects.
+- `?` makes a property optional (e.g., `spiceLevel?: number`).
