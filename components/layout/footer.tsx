@@ -2,7 +2,7 @@ import { Container } from "@/components/layout/container";
 
 export function Footer() {
   return (
-    <footer className="bg-ocean-blue text-soft-pearl py-12 mt-20">
+    <footer className="bg-abyssal-black text-soft-pearl py-12 mt-20">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
@@ -14,7 +14,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-sunset-coral">Explore</h4>
+            <h4 className="font-bold mb-4 text-antique-gold">Explore</h4>
             <ul className="space-y-2 text-sm text-soft-pearl/80">
               <li>
                 <a href="#" className="hover:text-white">
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-sunset-coral">Contact</h4>
+            <h4 className="font-bold mb-4 text-antique-gold">Contact</h4>
             <ul className="space-y-2 text-sm text-soft-pearl/80">
               <li>info@crabskhai.com</li>
               <li>+880 123 456 7890</li>
